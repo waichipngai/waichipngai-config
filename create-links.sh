@@ -4,7 +4,7 @@ EMACSLIVE=".emacs-live.el"
 BASHPROFILE=".bash_profile"
 
 
-CURRENT_DIR=$(dirname $0)
+CURRENT_DIR="waichipngai-config"
 
 cd ~
 
