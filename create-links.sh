@@ -41,7 +41,6 @@ then
     mv $ESLINTRC $ESLINTRC~
 fi
 
-
 #create links
 ln -s $CURRENT_DIR/$ZSHRC
 ln -s $CURRENT_DIR/$EMACSLIVE
