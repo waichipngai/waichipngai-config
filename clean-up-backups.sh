@@ -7,6 +7,8 @@ BASHPROFILE=".bash_profile~"
 JSCSRC=".jscsrc~"
 JSHINTRC=".jshintrc~"
 ESLINTRC=".eslintrc~"
+BASH_HISTORY=".bash_history"
+ZSH_HISTORY=".ZSH_history"
 
 
 if [ -e "$ZSHRC" ];

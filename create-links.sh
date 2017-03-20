@@ -6,7 +6,7 @@ JSCSRC=".jscsrc"
 JSHINTRC=".jshintrc"
 ESLINTRC=".eslintrc"
 
-CURRENT_DIR="waichipngai-config"
+CURRENT_DIR="Developer/waichipngai-config"
 CURRENT_CODESTYLE_DIR=$CURRENT_DIR"/code-style"
 cd ~
 
@@ -40,7 +40,6 @@ if [ -e "$ESLINTRC" ];
 then
     mv $ESLINTRC $ESLINTRC~
 fi
-
 
 
 #create links

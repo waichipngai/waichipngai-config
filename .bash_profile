@@ -1,3 +1,6 @@
+o# Point history file to dropbox
+export HISTFILE=~/Dropbox/Developer/shell/history/.bash_history
+
 PS1="\u$ "
 alias ll="ls -lahG"
 
