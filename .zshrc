@@ -94,3 +94,5 @@ alias e='emacsclient -c -nw'
 alias emacs='emacs -nw'
 # Raise number of file descriptors allows per process
 ulimit -n 10000
+
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
