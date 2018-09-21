@@ -91,7 +91,7 @@ export EDITOR='emacsclient -c'
 
 alias e='emacsclient -c -nw'
 
-alias emacs='emacs -nw'
+alias emacs='/usr/local/Cellar/emacs/26.1_1/Emacs.app/Contents/MacOS/Emacs  -nw'
 # Raise number of file descriptors allows per process
 ulimit -n 10000
 
