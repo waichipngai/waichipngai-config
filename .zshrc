@@ -96,3 +96,5 @@ alias emacs='/usr/local/Cellar/emacs/26.1_1/Emacs.app/Contents/MacOS/Emacs  -nw'
 ulimit -n 10000
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+export PATH=~/.npm-global/bin:$PATH
