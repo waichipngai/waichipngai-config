@@ -10,15 +10,17 @@
     <true/>
     <key>KeepAlive</key>
     <true/>
-    
+
     <key>StandardOutPath</key>
     <string>/Users/waichipngai/Library/Logs/code-server.log</string>
     <key>StandardErrorPath</key>
     <string>/Users/waichipngai/Library/Logs/code-server.log</string>
 
-    
+    <key>Program</key>
+    <string>/usr/bin/caffeinate</string>
     <key>ProgramArguments</key>
     <array>
+      <string>-i</string>
       <string>/usr/local/bin/code-server</string>
     </array>
 

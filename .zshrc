@@ -99,3 +99,7 @@ ulimit -n 10000
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 export PATH=~/.npm-global/bin:$PATH
+
+
+alias start-cs='launchctl load ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist'
+alias stop-cs='launchctl unload ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist'
