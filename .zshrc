@@ -55,6 +55,9 @@ plugins=(git)
 
 # User configuration
 
+# Raise number of file descriptors allows per process
+ulimit -n 10000
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -85,21 +88,19 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH=~/bin:$PATH
+export PATH="$HOME/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 export EDITOR='emacsclient -c'
 
 alias e='emacsclient -c -nw'
-
-alias emacs='/usr/local/Cellar/emacs/27.1/bin/emacs'
-
-# Raise number of file descriptors allows per process
-ulimit -n 10000
-
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-export PATH=~/.npm-global/bin:$PATH
-
-
 alias start-cs='launchctl load ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist && caffeinate -u -t 1'
 alias stop-cs='launchctl unload ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist'
