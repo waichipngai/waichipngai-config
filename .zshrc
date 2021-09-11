@@ -1,5 +1,5 @@
 # Point history file to dropbox
-export HISTFILE=~/Dropbox/Developer/shell/history/.zsh_history
+export HISTFILE=~/.zsh_history
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 

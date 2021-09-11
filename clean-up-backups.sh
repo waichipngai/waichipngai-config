@@ -7,6 +7,7 @@ BASHPROFILE=".bash_profile~"
 JSCSRC=".jscsrc~"
 JSHINTRC=".jshintrc~"
 ESLINTRC=".eslintrc~"
+HISTORY=".zsh_history"
 
 if [ -e "$ZSHRC" ];
 then
@@ -36,4 +37,9 @@ fi
 if [ -e "$ESLINTRC" ];
 then
     rm $ESLINTRC
+fi
+
+if [ -e "$HISTORY" ];
+then
+    rm $HISTORY
 fi
