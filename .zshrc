@@ -1,5 +1,5 @@
 # Point history file to dropbox
-export HISTFILE=~/.zsh_history
+export HISTFILE=~/Documents/shell/.zsh_history
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -104,6 +104,9 @@ export EDITOR='emacsclient -c'
 alias e='emacsclient -c -nw'
 alias start-cs='launchctl load ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist && caffeinate -u -t 1'
 alias stop-cs='launchctl unload ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist'
+alias start-jump='open /Applications/Jump\ Desktop\ Connect.app'
+alias stop-jump='sudo pkill JumpConnect'
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/waichipngai/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/waichipngai/google-cloud-sdk/path.zsh.inc'; fi
