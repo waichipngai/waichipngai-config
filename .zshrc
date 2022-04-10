@@ -3,8 +3,6 @@ export HISTFILE=~/Documents/shell/.zsh_history
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-source ~/.zprofile
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -64,6 +62,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+source ~/.zprofile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
