@@ -63,7 +63,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
-source ~/.zprofile
+# source ~/.zprofile
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -101,9 +101,9 @@ eval "$(pyenv init -)"
 export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
 export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
-export EDITOR='emacsclient -c'
+export EDITOR='emacs'
 
-alias e='emacsclient -c -nw'
+alias e='emacs'
 alias start-cs='launchctl load ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist && caffeinate -u -t 1'
 alias stop-cs='launchctl unload ~/Developer/waichipngai-config/LaunchAgents/com.waichipngai.code.server.plist'
 alias start-jump='open /Applications/Jump\ Desktop\ Connect.app'
